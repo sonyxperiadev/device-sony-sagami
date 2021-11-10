@@ -70,7 +70,22 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 TARGET_NO_RECOVERY := true
-BOARD_USES_RECOVERY_AS_BOOT := true
+
+# https://source.android.com/devices/bootloader/partitions/generic-boot#combinations, "Launch device without recovery partition":
+BOARD_USES_RECOVERY_AS_BOOT :=
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
+
+# https://source.android.com/devices/bootloader/partitions/vendor-boot-partitions#build-support
+# >= 3 is required for (and turns on) PRODUCT_BUILD_VENDOR_BOOT_IMAGE
+BOARD_BOOT_HEADER_VERSION := 3
+BOARD_RAMDISK_USE_LZ4 := true
+# AOSP does not propagate the header version
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
+# Build vendor_boot with `--dtb $(PRODUCT_OUT)/dtb.img` (generated from BOARD_PREBUILT_DTBIMAGE_DIR in KernelConfig.mk)
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 # DTBO partition definitions
 TARGET_NEEDS_DTBOIMAGE ?= true
