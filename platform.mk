@@ -119,9 +119,10 @@ AB_OTA_PARTITIONS += \
     dtbo \
     product \
     system \
-    vendor \
     vbmeta \
-    vbmeta_system
+    vbmeta_system \
+    vendor \
+    vendor_boot
 
 # Dynamic Partitions: build fastbootd
 PRODUCT_PACKAGES += \
