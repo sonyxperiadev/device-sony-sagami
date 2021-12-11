@@ -33,9 +33,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Keymaster 4
 TARGET_KEYMASTER_V4 := true
 
-# SDX55M PCI-e Modem
-TARGET_USES_ESOC := true
-
 # RIL
 TARGET_PER_MGR_ENABLED := true
 
