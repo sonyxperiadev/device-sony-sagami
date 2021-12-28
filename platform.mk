@@ -237,7 +237,7 @@ PRODUCT_PACKAGES += \
     copybit.sm8350 \
     gralloc.sm8350 \
     hwcomposer.sm8350 \
-    memtrack.sm8350
+    memtrack.default
 
 # GPS
 PRODUCT_PACKAGES += \
