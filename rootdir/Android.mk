@@ -14,7 +14,7 @@ LOCAL_SRC_FILES := vendor/etc/fstab.sagami
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_STEM := fstab.$(TARGET_DEVICE)
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/first_stage_ramdisk
+LOCAL_MODULE_PATH := $(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
