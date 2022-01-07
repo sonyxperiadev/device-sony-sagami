@@ -218,10 +218,6 @@ PRODUCT_PACKAGES += \
     init.sagami.pwr \
     ueventd
 
-# HVDCP init
-PRODUCT_PACKAGES += \
-    hvdcp_opti.rc
-
 # Audio init
 PRODUCT_PACKAGES += \
     audiopd.rc
