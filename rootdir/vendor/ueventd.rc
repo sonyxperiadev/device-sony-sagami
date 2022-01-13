@@ -176,6 +176,13 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/leds/blue     brightness   0644    system    system
 /sys/class/leds/blue     trigger      0644    system    system
 
+/sys/class/leds/vibrator activate         0644    system    system
+/sys/class/leds/vibrator brightness       0644    system    system
+/sys/class/leds/vibrator max_brightness   0644    system    system
+/sys/class/leds/vibrator duration         0644    system    system
+/sys/class/leds/vibrator state            0644    system    system
+/sys/class/leds/vibrator trigger          0644    system    system
+
 /sys/class/backlight/panel0-backlight max_brightness 0644 root system
 /sys/class/backlight/panel0-backlight brightness     0664 system system
 
