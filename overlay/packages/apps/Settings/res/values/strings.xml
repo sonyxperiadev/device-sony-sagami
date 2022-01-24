@@ -18,4 +18,6 @@
     <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message">
         Locate the fingerprint sensor on the side of your phone.</string>
+
+    <string name="peak_refresh_rate_summary">Automatically raises the refresh rate from 60 to 120 Hz for some content. Increases battery usage.</string>
 </resources>
