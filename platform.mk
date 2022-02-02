@@ -234,12 +234,15 @@ PRODUCT_PACKAGES += \
 # (executable is on odm)
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1-service-qti.rc \
-    android.hardware.keymaster@4.1.vendor
+    android.hardware.keymaster@4.1.vendor \
+    vendor.qti.hardware.qseecom@1.0-service.rc
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.keymaster.version=v4.1
 
-DEVICE_MANIFEST_FILE += $(PLATFORM_COMMON_PATH)/vintf/android.hw.keymaster_v4.1.xml
+DEVICE_MANIFEST_FILE += \
+    $(PLATFORM_COMMON_PATH)/vintf/android.hw.keymaster_v4.1.xml \
+    $(PLATFORM_COMMON_PATH)/vintf/vendor.qti.hardware.qseecom_v1.0.xml
 
 # GPS
 PRODUCT_PACKAGES += \
