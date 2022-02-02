@@ -21,9 +21,6 @@ vendor                                     /vendor                 ext4    ro,ba
 /dev/block/bootdevice/by-name/bluetooth    /vendor/bt_firmware     vfat    ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:vendor_firmware_file:s0 wait,slotselect
 /dev/block/bootdevice/by-name/persist      /mnt/vendor/persist     ext4    noatime,nosuid,nodev,barrier=1,data=ordered,nodelalloc,errors=panic   wait,notrim
 
-#ZRAM/SWAP
-/dev/block/zram0                           none                    swap    defaults                                                              zramsize=1073741824,max_comp_streams=8
-
 # External Devices
 /devices/platform/soc/8804000.sdhci/mmc_host/mmc*     auto         auto    nosuid,nodev                                                          voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto*   auto       auto    defaults                                                              voldmanaged=usb:auto
