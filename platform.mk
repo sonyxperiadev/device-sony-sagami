@@ -223,6 +223,11 @@ PRODUCT_PACKAGES += \
     audio.primary.sm8350 \
     libcirrusspkrprot
 
+# Camera
+PRODUCT_PACKAGES += \
+    model1.dat \
+    model2.dat
+
 # GFX
 PRODUCT_PACKAGES += \
     copybit.sm8350 \

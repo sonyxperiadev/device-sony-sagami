@@ -63,3 +63,21 @@ LOCAL_MODULE_SUFFIX :=
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/sensors
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := model1.dat
+LOCAL_SRC_FILES := vendor/etc/cvp/v2.0/facedetection/model1.dat
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX :=
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/cvp/v2.0/facedetection/
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := model2.dat
+LOCAL_SRC_FILES := vendor/etc/cvp/v2.1/facedetection/model2.dat
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX :=
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/cvp/v2.1/facedetection/
+include $(BUILD_PREBUILT)
