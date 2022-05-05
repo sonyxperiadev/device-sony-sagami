@@ -243,7 +243,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-service.rc
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.keymaster.version=v4.1
+    ro.vendor.keymaster.version=v4.1 \
+    ro.crypto.dm_default_key.options_format.version=2 \
+    ro.crypto.volume.metadata.method=dm-default-key
 
 DEVICE_MANIFEST_FILE += \
     $(PLATFORM_COMMON_PATH)/vintf/android.hw.keymaster_v4.1.xml \
