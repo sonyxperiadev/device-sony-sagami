@@ -62,6 +62,9 @@ BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 # to create a mount point for it
 BOARD_USES_METADATA_PARTITION := true
 
+# F2FS Userdata partition
+TARGET_USERIMAGES_USE_F2FS := true
+
 BOARD_AVB_ENABLE := true
 BOARD_AVB_VBMETA_SYSTEM := system
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH ?= external/avb/test/data/testkey_rsa2048.pem
