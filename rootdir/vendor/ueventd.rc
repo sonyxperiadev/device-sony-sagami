@@ -206,3 +206,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Ultrasound device
 /dev/usf1                 0660   system     system
+
+# UFS RPMB BSG device node
+/dev/0:0:0:49476          0600   system     system
