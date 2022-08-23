@@ -18,7 +18,7 @@ on post-fs
 
 on post-fs-data
     # Enable WLAN cold boot calibration
-    write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6390/fs_ready 1
+    write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
 
 on init
     # Boot time fs tune
