@@ -34,7 +34,7 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += console=null
 
 # Serial console
-#BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0xa90000
+#BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0x890000
 
 TARGET_RECOVERY_WIPE := $(PLATFORM_COMMON_PATH)/rootdir/recovery.wipe
 TARGET_RECOVERY_FSTAB ?= $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.sagami
