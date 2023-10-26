@@ -12,6 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+on charger
+    # Mount filesystems
+    trigger fs
+    # Bring ADSP out of reset
+    start vendor.adspstart_sh
+    # Restart charger after ADSP is out of reset
+    restart vendor.charger
+
 on post-fs
     rm /persist/bluetooth/.bt_nv.bin
     rmdir /persist/bluetooth
