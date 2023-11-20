@@ -328,6 +328,38 @@ PRODUCT_PACKAGES += \
 
 # Platform SSC Sensors
 PRODUCT_PACKAGES += \
+    lahaina_power_0.json \
+    lahaina_qrd_sx932x_0.json \
+    lahaina_ak991x_0.json \
+    lahaina_dynamic_sensors.json \
+    lahaina_bmp380_0.json \
+    lahaina_vertigo_ak991x_0.json \
+    lahaina_irq.json \
+    lahaina_qrd_tmd3702_0.json \
+    lahaina_lsm6dst_0.json \
+    lahaina_v2_fcal_ak991x_0.json \
+    lahaina_mtp_lsm6dst_0.json \
+    lahaina_hdk_ak991x_0.json \
+    lahaina_tmd3702_0.json \
+    lahaina_mtp_lsm6dst_1.json \
+    lahaina_shtw2_0.json \
+    lahaina_bu52053nvx_0.json \
+    lahaina_vertigo_lsm6dst_1.json \
+    lahaina_stk3x3x_0.json \
+    lahaina_vertigo_lsm6dst_0.json \
+    lahaina_hdk_lsm6dst_0.json \
+    lahaina_default_sensors.json \
+    lahaina_sx932x_0.json \
+    lahaina_hdk_tmd2725_0.json \
+    lahaina_lsm6dst_1.json \
+    lahaina_lsm6dso_0.json \
+    lahaina_hdk_lsm6dst_1.json \
+    lahaina_hdk_sx932x_0.json \
+    lahaina_lps22hh_0.json \
+    lahaina_qrd_lsm6dst_0.json \
+    lahaina_mtp_ak991x_0.json \
+    lahaina_qrd_ak991x_0.json
+
 
 # Other sagami-specific sensors
 PRODUCT_PACKAGES += \
