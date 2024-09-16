@@ -377,8 +377,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QCOM Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.bluetooth@1.0-service-qti
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcom.bluetooth.soc=hastings
