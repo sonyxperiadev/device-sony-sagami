@@ -5,7 +5,7 @@ LOCAL_MODULE := fstab.$(TARGET_DEVICE)
 LOCAL_SRC_FILES := vendor/etc/fstab.sagami
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -23,7 +23,7 @@ LOCAL_SRC_FILES := vendor/etc/init/init.sagami.rc
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .rc
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/init
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -32,7 +32,7 @@ LOCAL_SRC_FILES := vendor/etc/init/init.sagami.pwr.rc
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .rc
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/init
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -41,7 +41,7 @@ LOCAL_SRC_FILES := vendor/etc/ueventd.rc
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .rc
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)
 include $(BUILD_PREBUILT)
 
 ifeq ($(USE_SENSOR_MULTI_HAL),true)
@@ -51,7 +51,7 @@ LOCAL_SRC_FILES := vendor/etc/sensors/hals.conf
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX :=
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/sensors
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/sensors
 include $(BUILD_PREBUILT)
 endif
 
@@ -61,7 +61,7 @@ LOCAL_SRC_FILES := vendor/etc/sensors/sns_reg_config
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX :=
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/sensors
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/sensors
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -70,7 +70,7 @@ LOCAL_SRC_FILES := vendor/etc/cvp/v2.0/facedetection/model1.dat
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX :=
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/cvp/v2.0/facedetection/
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/cvp/v2.0/facedetection/
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -79,5 +79,5 @@ LOCAL_SRC_FILES := vendor/etc/cvp/v2.1/facedetection/model2.dat
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX :=
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/cvp/v2.1/facedetection/
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/cvp/v2.1/facedetection/
 include $(BUILD_PREBUILT)
