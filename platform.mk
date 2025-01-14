@@ -101,7 +101,9 @@ TARGET_USES_SDE := true
 
 # A/B support
 AB_OTA_UPDATER := true
-PRODUCT_SHIPPING_API_LEVEL := 27
+
+# Platform has been launched on Android 11 (API level 30)
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # A/B OTA dexopt package
 PRODUCT_PACKAGES += \
