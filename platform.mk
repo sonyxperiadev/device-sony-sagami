@@ -174,7 +174,7 @@ PRODUCT_COPY_FILES += \
 
 # Qualcom WiFi Configuration
 PRODUCT_COPY_FILES += \
-    $(SONY_ROOT)/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
+    $(SONY_ROOT)/vendor/etc/wifi/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca_cld/WCNSS_qcom_cfg.ini
 
 # NFC Configuration
 PRODUCT_COPY_FILES += \
