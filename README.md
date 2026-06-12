@@ -14,4 +14,4 @@ Android device configuration for the sagami platform (**SM8350**).
 
 ### Build instructions
 
-https://developer.sony.com/develop/open-devices/guides/aosp-build-instructions/
+https://opendevices.sony.net/aosp-on-xperia-open-devices/guides/aosp-build-instructions/
